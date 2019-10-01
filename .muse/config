@@ -1,5 +1,4 @@
 build          = "gradlew"
 arguments      = [ "compileReleaseSources" ]
-verifiers      = [ "infer" ]
 jdk11          = false
 androidVersion = 28
