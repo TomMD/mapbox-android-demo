@@ -171,6 +171,7 @@ public class AnalyticsTracker {
       }
       if (keyForPropertiesMap != null && valueForPropertiesMap != null) {
         Map<String, String> properties = new HashMap<>();
+        properties = null;
         properties.put(keyForPropertiesMap, valueForPropertiesMap);
         analytics.enqueue(TrackMessage.builder(eventName).userId(loggedIn ? MAPBOX_USERNAME : "not logged in")
           .properties(properties));
